@@ -1,0 +1,131 @@
+# ===========================
+# BANK MANAGEMENT SYSTEM
+# .gitignore
+# ===========================
+
+# open .gitignore and add these lines
+.github/
+database/
+# ─── BACKEND (Spring Boot / Maven) ───────────────────────────────
+
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+.mvn/wrapper/maven-wrapper.properties
+
+hs_err_pid*
+replay_pid*
+backend/src/main/resources/application.properties
+# ─── FRONTEND (React / Node) ──────────────────────────────────────
+
+frontend/node_modules/
+frontend/build/
+frontend/.pnp
+frontend/.pnp.js
+
+frontend/coverage/
+
+frontend/.env
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# ─── ENVIRONMENT & SECRETS ───────────────────────────────────────
+
+.env
+.env.*
+!.env.example
+
+application-prod.properties
+application-local.properties
+**/src/main/resources/application-secret.properties
+
+# ─── DATABASE ────────────────────────────────────────────────────
+
+*.sql.bak
+*.db
+*.sqlite
+*.h2.db
+mysql_data/
+
+# ─── IDEs ────────────────────────────────────────────────────────
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# VS Code
+.vscode/
+!.vscode/extensions.json
+
+# Eclipse
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+bin/
+
+# NetBeans
+nbproject/private/
+nbbuild/
+nbdist/
+.nb-gradle/
+
+# ─── OS FILES ────────────────────────────────────────────────────
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# ─── DOCKER ──────────────────────────────────────────────────────
+
+# Keep Dockerfiles but ignore local override
+docker-compose.override.yml
+
+# ─── LOGS ────────────────────────────────────────────────────────
+
+logs/
+*.log
+spring.log
+
+# ─── MISC ────────────────────────────────────────────────────────
+
+*.orig
+*.bak
+*.swp
+*.tmp
