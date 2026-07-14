@@ -1,4 +1,4 @@
-# 🏦 NexaBank — Bank Management System
+#  Bank Management System
 
 A full-stack CRUD Bank Management System built with **React**, **Spring Boot**, and **MySQL**.
 
